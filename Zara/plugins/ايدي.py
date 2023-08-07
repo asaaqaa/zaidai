@@ -37,8 +37,8 @@ plugin_category = "العروض"
 LOGS = logging.getLogger(__name__)
 #Code by T.me/zzzzl1l
 zed_dev = (6218149232, 6218149232, 6218149232, 6218149232, 6218149232)
-zel_dev = (6126535154, 6126535154)
-zelzal = (925972505, 1895219306, 6218149232)
+zel_dev = (6126535154, 6228635168)
+zelzal = (925972505, 925972505, 6218149232)
 
 
 async def get_user_from_event(event):
@@ -125,7 +125,7 @@ async def fetch_info(replied_user, event):
         zelzzz = "نار وشرر  🏆"
 ################# Dev ZilZal #################
     if user_id in zelzal: #Code by T.me/zzzzl1l
-        rotbat = "⌁  🌟 المـــــهيــب 𓄂𓆃 ⌁" 
+        rotbat = "⌁  🌟 المـــــهــيــب 𓄂𓆃 ⌁" 
     elif user_id in zel_dev:
         rotbat = "⌁  المســــاعد 🌟⌁" 
     elif user_id == (await event.client.get_me()).id and user_id not in zed_dev:
@@ -133,7 +133,7 @@ async def fetch_info(replied_user, event):
     else:
         rotbat = "⌁ الجنــــدي 𓅫 ⌁"
 ################# Dev ZilZal #################
-    ZED_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "ايــدي ــ الحــســاب  مـن بـوت ســهـۍ •𖣯•"  #Code by T.me/zzzzl1l
+    ZED_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "ايــدي ــ الحــســاب مـن بـوت ســهـۍ•𖣯•"  #Code by T.me/zzzzl1l
     ZEDM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "𖤓 " #Code by T.me/zzzzl1l
     ZEDF = gvarstatus("CUSTOM_ALIVE_FONT") or "𖠇 ———————sᴏʜᴀ——————┄─𖠇 " #Code by T.me/zzzzl1l
     caption = f"<b> {ZED_TEXT} </b>\n"
@@ -150,7 +150,7 @@ async def fetch_info(replied_user, event):
     caption += f"<b>{ZEDM}𝐈𝐍𝐓   ⇠</b>  {zelzzz}\n" #Code by T.me/zzzzl1l
     if user_id != (await event.client.get_me()).id: #Code by T.me/zzzzl1l
         caption += f"<b>{ZEDM} 𝐂𝐇𝐀𝐓 ⇠  {common_chat}</b>\n"
-    caption += f"<b>{ZEDM}       ⇠  {user_bio}</b>\n"
+    caption += f"{user_bio}</b>\n"
     caption += f"ٴ<b>{ZEDF}</b>"
     return photo, caption
 # Copyright (C) 2021 Zed-Thon . All Rights Reserved
@@ -166,7 +166,7 @@ async def fetch_info(replied_user, event):
 )
 async def who(event):
     "Gets info of an user"
-    zed = await edit_or_reply(event, "🌟")
+    zed = await edit_or_reply(event, "•𖣯•")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     replied_user = await get_user_from_event(event)
@@ -204,7 +204,7 @@ async def who(event):
 )
 async def who(event):
     "Gets info of an user"
-    zed = await edit_or_reply(event, "🌟")
+    zed = await edit_or_reply(event, "•𖣯•")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     replied_user = await get_user_from_event(event)
