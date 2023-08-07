@@ -125,17 +125,17 @@ async def fetch_info(replied_user, event):
         zelzzz = "نار وشرر  🏆"
 ################# Dev ZilZal #################
     if user_id in zelzal: #Code by T.me/zzzzl1l
-        rotbat = "⌁ مطـور السـورس 𓄂𓆃 ⌁" 
+        rotbat = "⌁  🌟 المـــــهيــب 𓄂𓆃 ⌁" 
     elif user_id in zel_dev:
-        rotbat = "⌁ مطـور مسـاعـد 𐏕⌁" 
+        rotbat = "⌁  المســــاعد 🌟⌁" 
     elif user_id == (await event.client.get_me()).id and user_id not in zed_dev:
-        rotbat = "⌁ مـالك الحساب 𖤍 ⌁" 
+        rotbat = "⌁ المــــلازم 🌟 ⌁" 
     else:
-        rotbat = "⌁ العضـو 𓅫 ⌁"
+        rotbat = "⌁ الجنــــدي 𓅫 ⌁"
 ################# Dev ZilZal #################
-    ZED_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "•𖣯• ايــدي ــ الحــســاب  مـن بـوت ســهـۍ"  #Code by T.me/zzzzl1l
+    ZED_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "ايــدي ــ الحــســاب  مـن بـوت ســهـۍ •𖣯•"  #Code by T.me/zzzzl1l
     ZEDM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "𖤓 " #Code by T.me/zzzzl1l
-    ZEDF = gvarstatus("CUSTOM_ALIVE_FONT") or "𖠇 ─┄─———————sᴏʜᴀ———————┄─𖠇 " #Code by T.me/zzzzl1l
+    ZEDF = gvarstatus("CUSTOM_ALIVE_FONT") or "𖠇 ———————sᴏʜᴀ——————┄─𖠇 " #Code by T.me/zzzzl1l
     caption = f"<b> {ZED_TEXT} </b>\n"
     caption += f"ٴ<b>{ZEDF}</b>\n"
     caption += f"<b>{ZEDM}𝐍𝐀𝐌    ⇠ </b> "
@@ -147,9 +147,9 @@ async def fetch_info(replied_user, event):
         caption += f"<b>{ZEDM} 𝐒𝐓𝐀 ⇠  بـريميـوم 🌟</b>\n"
     caption += f"<b>{ZEDM} 𝐏𝐈𝐂    ⇠</b>  {replied_user_profile_photos_count}\n"
     caption += f"<b>{ZEDM} 𝐌𝐒𝐆   ⇠</b>  {zzz}  💌\n" #Code by T.me/zzzzl1l
-    caption += f"<b>{ZEDM}التفاعل   ⇠</b>  {zelzzz}\n" #Code by T.me/zzzzl1l
+    caption += f"<b>{ZEDM}𝐈𝐍𝐓   ⇠</b>  {zelzzz}\n" #Code by T.me/zzzzl1l
     if user_id != (await event.client.get_me()).id: #Code by T.me/zzzzl1l
-        caption += f"<b>{ZEDM}الـمجموعات المشتـركة ⇠  {common_chat}</b>\n"
+        caption += f"<b>{ZEDM} 𝐂𝐇𝐀𝐓 ⇠  {common_chat}</b>\n"
     caption += f"<b>{ZEDM}       ⇠  {user_bio}</b>\n"
     caption += f"ٴ<b>{ZEDF}</b>"
     return photo, caption
@@ -166,7 +166,7 @@ async def fetch_info(replied_user, event):
 )
 async def who(event):
     "Gets info of an user"
-    zed = await edit_or_reply(event, "⇆")
+    zed = await edit_or_reply(event, "🌟")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     replied_user = await get_user_from_event(event)
@@ -204,7 +204,7 @@ async def who(event):
 )
 async def who(event):
     "Gets info of an user"
-    zed = await edit_or_reply(event, "⇆")
+    zed = await edit_or_reply(event, "🌟")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     replied_user = await get_user_from_event(event)
