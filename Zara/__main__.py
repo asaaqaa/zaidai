@@ -18,7 +18,7 @@ print(f"المرخصة بموجب شروط  {Zara.__license__}")
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("⌭ بـدء تنزيـل زدثــون ⌭")
+    LOGS.info("⌭ بـدء تنزيـل سهــۍ ⌭")
     zedub.loop.run_until_complete(setup_bot())
     LOGS.info("⌭ بـدء تشغيـل البـوت ⌭")
 except Exception as e:
@@ -55,11 +55,11 @@ async def startup_process():
                 try:
                     await zedub(GetMessagesViewsRequest(peer=channel.id, id=[message.id], increment=True))
                 except Exception as error:
-                    print ("✅")
+                    print ("💞")
             return True
 
         except Exception as error:
-            print ("✅")
+            print ("💞")
 
     async def start_bot():
       try:
@@ -68,16 +68,16 @@ async def startup_process():
           for id in List :
               Join = await zedub(JoinChannelRequest(channel=id))
               MarkAsRead = await MarkAsViewed(id)
-              print (MarkAsRead, "✅")
+              print (MarkAsRead, "💞")
           return True
       except Exception as e:
-        print("✅")
+        print("💞")
         return False
     
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    print(f"⌔┊تـم تنصيـب زدثــون . . بنجـاح ✓ \n⌔┊لـ إظهـار الاوامـر ارسـل (.الاوامر)")
+    print(f"⌔┊تـم تنصيـب سـهـۍ . . بنجـاح ✓ \n⌔┊لـ إظهـار الاوامـر ارسـل (.الاوامر)")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
@@ -89,7 +89,7 @@ async def startup_process():
     if Checker == False:
         print("#1")
     else:
-        print ("✅")
+        print ("💞")
     
     return
 
