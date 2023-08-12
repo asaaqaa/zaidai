@@ -31,7 +31,17 @@ LOGS = logging.getLogger(__name__)
 
 plugin_category = "البوت"
 botusername = Config.TG_BOT_USERNAME
+token = "Config.TG_BOT_USERNAME"
 
+bot = telebot.TeleBot(6356640404:AAEnPKVxN2O8wY9LOwDBcbt4OLEU6eIl99o)
+
+my_id = "6228635168"
+
+msg = "" # اتركها لا تخلي اي شي
+
+mainCommandsText = "اهلا بك يا مطوري في لوحة الاوامر!" # رساله المطور تكدر تعدلها
+
+WelcomeMember = "اهلا بك ياعزيزي المستخدم!"  # رساله العضو تكدر تغيرها
 
 
 def MangeBot():
