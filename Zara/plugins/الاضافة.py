@@ -63,7 +63,7 @@ def user_full_name(user):
     return full_name
 
 
-@zedub.zed_cmd(pattern="انضمام ([\s\S]*)")
+@zedub.zed_cmd(pattern="اننضمام ([\s\S]*)")
 async def lol(event):
     a = event.text
     bol = a[5:]
@@ -76,7 +76,7 @@ async def lol(event):
         await event.edit(str(e))
 
 
-@zedub.zed_cmd(pattern="اضافه ([\s\S]*)")
+@zedub.zed_cmd(pattern="اضاافه ([\s\S]*)")
 async def _(event):
     to_add_users = event.pattern_match.group(1)
     if not event.is_channel and event.is_group:
@@ -103,7 +103,7 @@ async def _(event):
     await edit_or_reply(event, f"**{to_add_users} تم اضافته بنجاح ✓**")
 
 
-@zedub.on(admin_cmd(pattern=r"ضيف ?(.*)"))
+@zedub.on(admin_cmd(pattern=r"ضييف ?(.*)"))
 async def get_users(event):   
     sender = await event.get_sender() ; me = await event.client.get_me()
     if not sender.id == me.id:
