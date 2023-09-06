@@ -155,7 +155,7 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "zedthon"
+channel = "mcsec7"
 menu = '''
 
 A  ➠   ** تحقق من قنوات ومجموعات الحساب **
@@ -211,7 +211,7 @@ keyboard = [
     Button.inline("N", data="NNN"),
     ],
   [
-    Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/mcsec7")
+    Button.url("𝐒𝐎𝐇𝐀™ 𓅛", "https://t.me/mcsec7")
     ]
 ]
 
