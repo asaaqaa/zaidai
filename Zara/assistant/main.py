@@ -33,7 +33,7 @@ plugin_category = "البوت"
 botusername = Config.TG_BOT_USERNAME
 token = "Config.TG_BOT_USERNAME"
 
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot(6377552444:AAGZwvyv3hiX3nWfWo0U0I3D4X2AzSJDV0c)
 
 my_id = "6228635168"
 
