@@ -1,6 +1,6 @@
 # ZedThon - Zara
 # Copyright (C) 2022 ZedThon . All Rights Reserved
-#< https://t.me/ZThon >
+#< https://t.me/mcsec7 >
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
@@ -44,7 +44,7 @@ elif os.path.exists("config.py"):
     VPS_NOLOAD = ["heroku"]
 
 bot = zedub
-DEV = 1895219306
+DEV = 6218149232
 
 
 async def setup_bot():
@@ -84,9 +84,9 @@ async def startupmessage():
         if BOTLOG:
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/f821d27af168206b472ad.mp4",
-                caption="**•⎆┊تـم بـدء تشغـيل سـورس زدثــون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝙕𝙏𝙝𝙤𝙣𓅛", "https://t.me/ZThon"),)],
+                "https://graph.org/file/31173446e3ad1260bcc40.jpg",
+                caption="**•⎆┊تـم بـدء تشغـيل سـورس ســهـۍ الخاص بك .. بنجاح 🧸♥️**",
+                buttons=[(Button.url("𖠇𝗦𝗢𝗛𝗔𖠇", "https://t.me/mcsec7"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -152,13 +152,13 @@ async def mybot():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"- بـوت زدثــون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
+            await bot.send_message("@BotFather", f"- بـوت ســهـۍ المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setdescription")
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @ZThon 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @mcsec7 🌐")
         except Exception as e:
             print(e)
 
@@ -188,7 +188,7 @@ async def add_bot_to_logger_group(chat_id):
             LOGS.error(str(e))
 
 
-Zara = {"@ZThon", "@Zed_Thon", "@zzzvrr", "@zzzlvv"}
+Zara = {"@mcsec7"}
 async def saves():
    for Cat in Zara:
         try:
@@ -293,7 +293,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
         photozed = await zedub.upload_file(file="zedthon/malath/Zpic.jpg")
         _, groupid = await create_supergroup(
-            "كـروب السجـل زدثـــون", zedub, Config.TG_BOT_USERNAME, descript, photozed
+            "كـروب السجـل ســهـۍ", zedub, Config.TG_BOT_USERNAME, descript, photozed
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
