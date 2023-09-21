@@ -9,7 +9,8 @@
   "keywords": [
 
     "plugin",
-    
+    "python3", 
+    "telegram", 
     "plugin", 
     
     "Zara", 
@@ -115,12 +116,11 @@
     }
 
     },
-
-  "addons":["ormongo:5-wt"], 
- 
-
+  
   "buildpacks": [{
 
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+  },{
     "url":"https://github.com/asaaqaa/Heroku-Buildpack-FFMPEG-latest"
 
   },{
@@ -156,6 +156,11 @@
     "url": "heroku/nodejs"
 
   }],
-  "stack": "container"
-
+    "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "eco"
+          }
+      },
+      "stack": "container"
   }
