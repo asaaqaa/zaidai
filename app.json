@@ -116,7 +116,7 @@
 
     },
 
-  "addons": ["heroku-postgresql"], 
+  "addons":["ormongo:5-wt"], 
  
 
   "buildpacks": [{
