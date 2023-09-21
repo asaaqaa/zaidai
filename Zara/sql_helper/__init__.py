@@ -13,9 +13,9 @@ LOGS = logging.getLogger(__name__)
 
 def start() -> scoped_session:
     database_url = (
-        Config.DB_URI.replace("mongodb:", "mongodb+srv:")
-        if "mongodb+srv://" in Config.DB_URI
-        else Config.DB_URI
+        Config.MONGO_DB_URI.replace("mongodb:", "mongodb+srv:")
+        if "mongodb+srv://" in Config.MONGO_DB_URI
+        else Config.MONGO_DB_URI
     )
     engine = create_engine(database_url)
     BASE.metadata.bind = engine
