@@ -12,12 +12,12 @@ LOGS = logging.getLogger(__name__)
 
 
 def start() -> scoped_session:
-    database_url = (
+    mongo_db_uri = (
         Config.MONGO_DB_URI.replace("mongodb:", "mongodb+srv:")
         if "mongodb+srv://" in Config.MONGO_DB_URI
         else Config.MONGO_DB_URI
     )
-    engine = create_engine(database_url)
+    engine = create_engine(mongo_db_uri)
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
