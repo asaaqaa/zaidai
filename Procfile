@@ -1,1 +1,1 @@
-web: bash worker
+worker: bash free
