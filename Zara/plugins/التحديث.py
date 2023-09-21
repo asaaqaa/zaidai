@@ -270,7 +270,7 @@ async def upstream(event):
             f"I guess you are on selfhost. For self host you need to use `{cmdhd}update now`",
         )
     event = await edit_or_reply(event, f"ᯓ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐎𝐇𝐀 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⪼ يتم تنصيب التحديث  انتظر ✿ ،**")
-    off_repo = "https://github.com/asaaqaa/Raddb"
+    off_repo = "https://github.com/asaaqaa/zaidai"
     os.chdir("/app")
     try:
         txt = (
