@@ -1,34 +1,16 @@
-import os
-
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 
-# the secret configuration specific things
-from ..Config import Config
-from ..core.logger import logging
-
-LOGS = logging.getLogger(__name__)
+from Exon import DB_URI
 
 
 def start() -> scoped_session:
-    mongo_db_uri = (
-        Config.MONGO_DB_URI.replace("mongodb:", "mongodb+srv:")
-        if "mongodb+srv://" in Config.MONGO_DB_URI
-        else Config.MONGO_DB_URI
-    )
-    engine = create_engine(mongo_db_uri)
+    engine = create_engine(DB_URI, client_encoding="utf8")
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
 
 
-try:
-    BASE = declarative_base()
-    SESSION = start()
-except AttributeError as e:
-    # this is a dirty way for the work-around required for #23
-    LOGS.error(
-        "DB_URI is not configured. Features depending on the database might have issues."
-    )
-    LOGS.error(str(e))
+BASE = declarative_base()
+SESSION = start()
