@@ -61,11 +61,11 @@
 
     },
 
-    "MONGO_DB_URI": {
+    "DATABASE_URL": {
 
       "description": "كـود ايبي هـاش〔 Api hash 〕..",
 
-      "value": "mongodb+srv://Bikash:Bikash@bikash.yl2nhcy.mongodb.net/?retryWrites=true&w=majority"
+      "value": "postgres://asaaqawe_user:LBJcmXnoUWtVU7Q2YIW3gmteuxLd8ezj@dpg-ck9q09ns0fgc73eofnm0-a.oregon-postgres.render.com/asaaqawe"
 
     },
     "COMMAND_HAND_LER": {
