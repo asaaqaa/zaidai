@@ -65,7 +65,6 @@ except Exception:
 
 
 # Global Configiables
-DB_URI = Config.MONGO_DB_URI
 COUNT_MSG = 0
 USERS = {}
 COUNT_PM = {}
