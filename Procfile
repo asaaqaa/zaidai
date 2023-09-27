@@ -1,1 +1,1 @@
-worker: bash free
+worker: bash server.py
